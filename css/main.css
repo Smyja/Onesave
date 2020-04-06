@@ -6,10 +6,11 @@ box-sizing: border-box;
 
 .gallery {
 display: grid;
-grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
 grid-gap: 1rem;
 grid-auto-flow: dense;
 padding: 1rem;
+border-radius: 10px;
 }
 .gallery .box {
 background-color: #CCC;
