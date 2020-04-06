@@ -1,24 +1,18 @@
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
+
+.ul { 
+padding: 0; 
+list-style: none; 
+	
 }
 
-.gallery {
+
+.li {
 display: flex;
 width: 100px; 
 height: 100px; 
-margin: 8px
-
-}
-.gallery .box {
-background-color: #CCC;
-background-size: cover;
+margin: 8px;
 border-radius: 10px;
+background-color: #CCC;
 
-}
-.gallery .box:after {
-content: '';
-display: block;
-padding-top: calc(100% / (16/10));
-}
+
+
