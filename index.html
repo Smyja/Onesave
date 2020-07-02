@@ -7,6 +7,7 @@
     <title>Home - Brand</title>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"/>
+<link rel="stylesheet" href="main.css">
    </head>
    <body>
 <main>
@@ -57,41 +58,5 @@
                     tl.reversed() ? tl.play() : tl.reverse();
                 })
 </script>
-<style type="text/css">
-body {
-    height: 100%;
-    margin: 0;
-    display: grid;
-    grid-template-columns: auto 30%;
-    font-family: 'Montserrat';
-}
-
-*, *:before, *:after {
-    box-sizing: border-box;
-}
-
-.line {
-    position: absolute;
-}
-
-main {
-    margin-left: 20%;
-    height: 100vh;
-    display: grid;
-    place-content: center;
-
-    .content {
-        width: 70%;
-
-        h1 {
-            font-size: 3em;
-            position: relative;
-
-            span {
-                display: block;
-            }
-
-        }
-</style>
 </body>
 </html>
