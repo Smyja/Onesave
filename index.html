@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -6,23 +5,93 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Home - Brand</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/mailtoharshit/San-Francisco-Font-/sanfrancisco.css">
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+   <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/CSSRulePlugin3.min.js"/>
    </head>
-<body>
-<p dir="ltr"><b>Our Crossroads</b></p>
-<p dir="ltr">"Seeing is believing om&oacute;", I said, while buttoning her dress. I would love to be present tonight. She throws a short gaze at me. "Okay, you will have to stay far away though, watching from the top of a building nearby would be better" ."Thank you", i laid a kiss on her head.</p>
-<p dir="ltr">We drove to the holy grounds she had always been to every year.&nbsp; I have lived all my life in this state, but I had never seen this part of the state. In my defense, it was getting dark, so yeah, I could literally not see anything. <br />When we arrived, I could see light from what I suspected was a fire. I stepped out of the car, and the smoke was a little clearer From that direction.</p>
-<p dir="ltr" style="text-align: right;">"There's a staircase behind the door , it should lead you to the top" she pointed at the building quickly."<br /><br /><br /><br /><br /><br /><br /></p>
-<p dir="ltr">What an evening, so does this work? I didn't see any&nbsp; supernatural thing. Honestly, I do feel the religion is dying out. Most of their practices are considered barbaric or nasty. T-junctions are filled with uz&oacute;bo that the god's clearl wouldn't eat. I mean, I wouldn't eat that,I can't blame them. "This should be the last time we speak of religion". "Don't get me wrong", stop it, that line is too old. You say something clearly horrible with utter disrespect for me and my beliefs and when I react, you tell me to not get you wrong?" If you do not</p>
-<p dir="ltr">Tell me, are you religious? Do your folks still believe in Valhalla? Or you're all Christians now? Siggrit raises his head in surprise wondering what prompted me to ask. He pulled a necklace from inside his shirt that had something shaped like a coin. "It's a generational relic, I do believe, but I'll like to keep my religious life private" . "Fair enough", k replied.</p>
-<p dir="ltr">"The reason we called you here, is to discuss possible investment in the spwarwick region in Norway." "Not every hole in the economy has to be filled, if you understand this ,then you would have completed the first step to understanding Norwegian's economy." Om&oacute; smiled. We're buying an estate for a farm. We plan on growing fruits for a juice factory. </p>
+   <body>
+<main>
+    <div class="content">
+        <h1 class="anim1"><span>Bridging the gap</span> <span>between dream</span> <span>and reality</span></h1>
+        <p class="anim1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio at ipsa alias modi natus excepturi?</p>
+        <a href="#" class="anim1" id="cta">Start Dreaming</a>
+    </div>
+</main>
+<aside>
+        <div class="wrapper">
+            <img class="swirl" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/2621168/swirl.png" alt="Swirl Graphic">
+        </div>
+</aside>
+<script type="text/javascript">
+                // 1
+                // gsap.from(".content", {duration:1, y:-50, opacity: 0});
 
-<style>
+                // 1.1   Show Easings  "steps(5)"   "Power2.easeInOut"  "elastic(1, 0.3)"  https://greensock.com/docs/v2/Easing
+                // gsap.from(".content", {duration:1, y:-50, opacity: 0, ease: "elastic(1, 0.3)"}); 
+
+                // 2  ADD
+                // gsap.from("img", {duration: 1, y: 30, opacity: 0});
+                // gsap.from("aside", {duration: 1, opacity: 0, backgroundPosition: '200px 0px'});
+
+                // 3 Show Delay
+                // gsap.from("img", {duration: 1, delay: 1.4, y: 30, opacity: 0});
+                // gsap.from("aside", {duration: 1, delay: 1.1, opacity: 0, backgroundPosition: '200px 0px'});
+
+                // 4 Show Stagger (add class)
+                // gsap.from(".anim1", {duration:1, y:-50, opacity: 0, stagger: .6});
+
+                // 5 Show text reveal animation (add css span:after)
+                // <script src="CSSRulePlugin.min.js">
+
+                var rule = CSSRulePlugin.getRule("span:after");
+                
+                // 6 Show Timeline
+                var tl = gsap.timeline({defaults:{duration: 1}});
+                tl.from(".anim1", {y:-50, stagger: .6, opacity: 0})
+                  .to(rule, {duration: 1.8,cssRule: {scaleY: 0}}, "-=2.2")
+                  .from("aside", {backgroundPosition: '200px 0px', opacity: 0}, "-=1.5")
+                  .from("img", {y:30, opacity: 0}, "-=.5")
+
+                // 7 Show Click reverse
+                document.getElementById('cta').addEventListener('click', () => {
+                    console.log('click')
+                    tl.reversed() ? tl.play() : tl.reverse();
+                })
+</script>
+<style type="text/css">
 body {
- background-image: url("https://res.cloudinary.com/dovty1kqh/image/upload/v1593556416/DpkJm_ery35c.png");
- color: white;
+    height: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-columns: auto 30%;
+    font-family: 'Montserrat';
 }
 
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.line {
+    position: absolute;
+}
+
+main {
+    margin-left: 20%;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+
+    .content {
+        width: 70%;
+
+        h1 {
+            font-size: 3em;
+            position: relative;
+
+            span {
+                display: block;
+            }
+
+        }
 </style>
 </body>
 </html>
