@@ -211,17 +211,6 @@ button {
 }
 
 /* navi end */
-.wrap_box {
-    /* width: 500px; */
-    
-    background: #0e1c37;
-    margin: auto;
-    padding: 40px 45px 57px 45px;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    border-radius: 15px;
-    /* box-shadow: 6px 5px 15px 4px #000000a6; */
-}
 input.input_fld {
     background: #1c2a44;
     width: 100%;
@@ -330,8 +319,6 @@ p {
     label {
         font-size: 15px;
     }
-    
-   
 }
 
 /* responsive css end */
@@ -422,18 +409,25 @@ p {
 body {
     background: -moz-radial-gradient(center, ellipse cover, #ba0001 0%, #630505 100%);
     /* FF3.6+ */
+    
     background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #ba0001), color-stop(100%, #630505));
     /* Chrome,Safari4+ */
+    
     background: -webkit-radial-gradient(center, ellipse cover, #ba0001 0%, #630505 100%);
     /* Chrome10+,Safari5.1+ */
+    
     background: -o-radial-gradient(center, ellipse cover, #ba0001 0%, #630505 100%);
     /* Opera 12+ */
+    
     background: -ms-radial-gradient(center, ellipse cover, #ba0001 0%, #630505 100%);
     /* IE10+ */
+    
     background: radial-gradient(ellipse at center, #ba0001 0%, #630505 100%);
     /* W3C */
+    
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ba0001', endColorstr='#630505', GradientType=1);
     /* IE6-9 fallback on horizontal gradient */
     /* dark mode */
+    
     filter: invert(1) hue-rotete(180deg);
 }
