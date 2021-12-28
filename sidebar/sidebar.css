@@ -1,0 +1,46 @@
+    /* Sidebar */
+    
+    .sidebar {
+        height: 100%;
+        width: 180px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding-top: 40px;
+        background-color: lightblue;
+    }
+    
+    .sidebar div {
+        padding: 8px;
+        font-size: 24px;
+        display: block;
+    }
+    
+    .sidebar a {
+        padding: 8px;
+        font-size: 24px;
+        display: block;
+        text-decoration: none;
+    }
+    
+    .sidebar a:hover {
+        cursor: pointer;
+        opacity: .7;
+    }
+    /* center the text at the middle of the viewport */
+    
+    .body-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .sidebar .closebtn {
+        display: none;
+    }
+    
+    .openbtn {
+        display: none;
+    }
+    /* responsive css start*/
