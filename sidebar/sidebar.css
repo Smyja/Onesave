@@ -1,46 +1,70 @@
-    /* Sidebar */
-    
-    .sidebar {
-        height: 100%;
-        width: 180px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        padding-top: 40px;
-        background-color: lightblue;
-    }
-    
-    .sidebar div {
-        padding: 8px;
-        font-size: 24px;
-        display: block;
-    }
-    
-    .sidebar a {
-        padding: 8px;
-        font-size: 24px;
-        display: block;
-        text-decoration: none;
-    }
-    
-    .sidebar a:hover {
-        cursor: pointer;
-        opacity: .7;
-    }
-    /* center the text at the middle of the viewport */
-    
-    .body-text {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-    
-    .sidebar .closebtn {
-        display: none;
-    }
-    
-    .openbtn {
-        display: none;
-    }
-    /* responsive css start*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #F5ECFE;
+}
+
+
+/* Sidebar */
+
+.sidebar {
+    height: 100%;
+    width: 180px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 40px;
+    background-color: white;
+}
+
+.sidebar div {
+    padding: 8px;
+    font-size: 24px;
+    display: block;
+}
+
+.sidebar a {
+    padding: 8px;
+    font-size: 24px;
+    display: block;
+    text-decoration: none;
+    color: #14354E;
+}
+
+.sidebar a:hover {
+    cursor: pointer;
+    background-color: lightgreen;
+}
+
+
+/* center the text at the middle of the viewport */
+
+.body-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header {
+    background-color: white;
+    width: 100%;
+    height: 48px;
+    top: 0;
+    position: relative;
+}
+
+h1 {
+    padding-left: 255px;
+    font-family: lato;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+
+/* responsive css start*/
