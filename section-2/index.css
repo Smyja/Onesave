@@ -1,0 +1,152 @@
+                                    * {
+                                        box-sizing: border-box;
+                                        margin: 0;
+                                        padding: 0;
+                                    }
+                                    
+                                    body {
+                                        background-color: #23252C;
+                                        color: white;
+                                    }
+                                    
+                                    .container {
+                                        width: 460px;
+                                        height: 650px;
+                                        padding: 100px;
+                                        margin: 10px;
+                                        position: absolute;
+                                        top: 50%;
+                                        left: 50%;
+                                        transform: translate(-50%, -50%);
+                                        background: #1A1B21;
+                                    }
+                                    
+                                    .se {
+                                        left: 116px;
+                                        top: 44px;
+                                        background-repeat: no-repeat;
+                                        border-radius: 10px 10px 0px 0px;
+                                    }
+                                    
+                                    .about {}
+                                    
+                                    footer {
+                                        position: absolute;
+                                        width: 460px;
+                                        height: 54px;
+                                        background: #161619;
+                                        right: 0.5px;
+                                        bottom: 0px;
+                                        display: flex;
+                                        justify-content: space-evenly;
+                                        padding-top: 10px;
+                                    }
+                                    
+                                    .info {}
+                                    
+                                    div>img {
+                                        width: 200px;
+                                        height: 200px;
+                                        margin-right: 100px;
+                                        right: -30px;
+                                        position: relative;
+                                        border-radius: 50%;
+                                        top: -70px;
+                                    }
+                                    
+                                    .interest {
+                                        font-family: Inter;
+                                    }
+                                    
+                                    .info h3 {
+                                        font-family: Inter;
+                                        font-size: 25px;
+                                        font-style: normal;
+                                        font-weight: 700;
+                                        line-height: 30px;
+                                        letter-spacing: 0em;
+                                        color: #FFFFFF;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        margin-top: -50px;
+                                    }
+                                    
+                                    .info h4 {
+                                        font-family: Inter;
+                                        font-size: 13px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 15px;
+                                        letter-spacing: 0em;
+                                        color: #F3BF99;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                    }
+                                    
+                                    .about p {
+                                        font-family: Inter;
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 10.24px;
+                                        line-height: 150%;
+                                        /* or 15px */
+                                        color: #DCDCDC;
+                                        padding-top: 10px;
+                                        padding-bottom: 10px;
+                                    }
+                                    
+                                    .interest p {
+                                        font-family: Inter;
+                                        font-style: normal;
+                                        font-weight: normal;
+                                        font-size: 10.24px;
+                                        line-height: 150%;
+                                        /* or 15px */
+                                        color: #DCDCDC;
+                                        padding-top: 10px;
+                                        padding-bottom: 10px;
+                                    }
+                                    
+                                    button {
+                                        /* white */
+                                        background: #FFFFFF;
+                                        /* gray/300 */
+                                        border: 1px solid #D1D5DB;
+                                        box-sizing: border-box;
+                                        /* shadow/sm */
+                                        box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
+                                        border-radius: 6px;
+                                        display: flex;
+                                        flex-direction: row;
+                                        justify-content: center;
+                                        align-items: center;
+                                        padding: 9px 13px 9px 11px;
+                                        width: 247px;
+                                        height: 34px;
+                                        left: 151px;
+                                        top: 469px;
+                                        margin-left: 10px;
+                                    }
+                                    
+                                    .info small {
+                                        font-family: Inter;
+                                        font-size: 10px;
+                                        font-style: normal;
+                                        font-weight: 400;
+                                        line-height: 15px;
+                                        letter-spacing: 0em;
+                                        text-align: center;
+                                        color: #F5F5F5;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        padding-top: 5px;
+                                        padding-bottom: 5px;
+                                    }
+                                    
+                                    .about h3 {
+                                        padding-top: 20px;
+                                        font-family: Inter;
+                                    }
